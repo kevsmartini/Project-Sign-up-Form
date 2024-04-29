@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&family=Knewave&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&family=Knewave&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 /**CSS Reset**/
 
 /*
@@ -20,6 +24,8 @@
   body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
   }
   /*
     5. Improve media defaults
@@ -39,8 +45,192 @@
   */
   p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
-  }
-  /*
- 
+  };
 
-  
+  @font-face {
+    font-family:'Norsebold', 'Gill Sans';
+    src: url('assets/font/Norsebold.otf');
+  }
+
+
+
+  #container{
+    display: flex;
+  }
+
+  #form-img{
+    flex: 1;
+    background:url('https://images.pexels.com/photos/1029596/pexels-photo-1029596.jpeg?auto=compress&cs=tinysrgb&w=600');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    position: relative
+
+
+  }
+
+  #form-img picture{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    top: 150px;
+    background-color: rgba(0, 0, 0, 0.359);
+    padding: 10px 0;
+
+  }
+
+  #form-img picture h1{
+    font-size: 3.5rem;
+    font-family: 'Norsebold','Finger Paint', sans-serif;
+  }
+
+  #form-img img{
+    width: 80px;
+  }
+
+
+/**main section**/
+
+  #main{
+    flex: 2;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    background-color: #f7f8f6;
+  }
+
+  .description p{
+    text-align: left;
+    margin-right: 100px;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+    padding-left:50px;
+
+  }
+
+  /**FORM SECTION**/
+
+  #form-details{
+    box-shadow: 0px 6px 5px -1px rgba(0, 0, 0, 0.463);
+    padding-left:50px;
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 20px 0 20px 50px;
+    display: flex;
+    flex-direction: column;
+    font-size: .9rem;
+  }
+
+  #form-details h1{
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+
+
+
+  #form-details-content{
+    display: flex;
+    gap: 60px;
+  }
+
+  #content-column1 #hidden{
+    color:red ;
+    display: none;
+  }
+
+
+
+  #field{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+  }
+
+  #field input {
+    border-radius: 5px;
+    border: 1px solid #E5E7EB;
+    outline: none;
+    width: 200px;
+    height: 30px;
+
+  }
+
+  #field input:focus {
+
+    border-color:  blue ;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2)
+
+
+  }
+
+  #field input::placeholder {
+    font-size: 0.8rem;
+}
+
+#field input.password:invalid {
+    border-color: red;
+}
+
+#field input.confirm-password:invalid {
+    border-color: red;
+}
+
+
+  #button{
+    padding-left:50px;
+
+
+  }
+
+  #button button{
+    width: 200px;
+    height: 40px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    background-color: #596D48;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all 1s;
+
+  }
+
+  #button button:hover{
+    transform: scale(1.1);
+    transition: all 1s;
+
+  }
+
+
+  #button p{
+    font-size: .9rem;
+    margin-top: 20px;
+
+  }
+
+  #button a{
+    color: #596D48;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+
+
+/**meadi Query**/
+
+@media  screen and (width <= 800px) {
+
+   
+    #form-img{
+        display: none;
+        
+    }
+    
+}
+

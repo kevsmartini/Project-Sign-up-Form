@@ -10,71 +10,97 @@
 
     <div id="container">
         <aside id="form-img">
-            <img src="https://images.pexels.com/photos/2522085/pexels-photo-2522085.jpeg?auto=compress&cs=tinysrgb&w=600" alt="nature photo">
+            <picture>
+                <img src="assets/img/odin-lined.png">
+                <h1>ODIN</h1>
+            </picture>
+            
         </aside>
 
         <main id="main">
             <section class="description">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet adipisci repudiandae, temporibus delectus atque consectetur! Ea assumenda nihil nam voluptates eum animi rerum aut fuga blanditiis, dolores exercitationem. Necessitatibus, corrupti?</p>
+                <p>This is not a real online service! You know you need something <br> like this in your life to help you realize your deepest dreams. <br>sign-up <em>now</em> to get started. <br> <br> You know you want to.</p>
             </section>
 
             <form action="" id="sign-up">
-                <h1>Let's do this</h1>
+                
 
                 <section id="form-details">
-                    <div class="name">
-                        <label for="name"  id="name">FIRST NAME</label>
-                        <input type="text" 
-                        placeholder="Enter your name" 
-                        required
-                        >
+                    <h1>Let's do this</h1>
+
+                    <div id="form-details-content">
+
+                        <div id="content-column1" class="column">
+
+                            <div id="field" class="name">
+                                <label for="name"  id="name">FIRST NAME</label>
+                                <input type="text" 
+                                placeholder="Enter your name" 
+                                required
+                                >
+                            </div>
+
+                            <div id="field" class="email">
+                                <label for="email"  id="email">EMAIL</label>
+                                <input type="email" 
+                                placeholder="Enter your email" 
+                                required
+                                >
+                            </div>
+
+                            <div id="field" >
+                                <label for="password"  id="password">PASSWORD</label>
+                                <input class="password" type="password" 
+                                placeholder="Enter your password" 
+                                required
+                                >
+                            </div>
+                            <span id="hidden">*Passwords do not match</span >
+
+                        </div>
+
+                        <div id="content-column2" class="column">
+                            <div id="field" class="last-name">
+                                <label for="last-name"  id="last-name">LAST NAME</label>
+                                <input type="text" 
+                                placeholder="Enter your last name" 
+                                required
+                                >
+                            </div>    
+
+                            <div id="field" class="phone-number">
+                                <label for="tel"  id="phone-number">PHONE NUMBER</label>
+                                <input type="tel" 
+                                placeholder="Enter your phone number" 
+                                minlength="9"
+                                maxlength="9" required
+                                pattern="[0-9]*"
+                                >
+                            </div>
+
+                            <div id="field" >
+                                <label for="password"  id="confirm-password">CONFIRM PASSWORD</label>
+                                <input class="confirm-password" type="password" 
+                                placeholder="Enter your password" 
+                                required
+                                >
+                            </div>       
+
+
+                        </div>
+    
                     </div>
-                   
-    
-                    <div class="last-name">
-                        <label for="last-name"  id="last-name">LAST NAME</label>
-                        <input type="text" 
-                        placeholder="Enter your last name" 
-                        required
-                        >
-                    </div>
-    
-                    <div class="email">
-                        <label for="email"  id="email">EMAIL</label>
-                        <input type="text" 
-                        placeholder="Enter your last email" 
-                        required
-                        >
-                    </div>
-    
-                    <div class="phone-number">
-                        <label for="tel"  id="phone-number">PHONE NUMBER</label>
-                        <input type="text" 
-                        placeholder="Enter your last phone number" 
-                        required
-                        >
-                    </div>
-    
-                    <div class="password">
-                        <label for="password"  id="password">PASSWORD</label>
-                        <input type="password" 
-                        placeholder="Enter your last password" 
-                        required
-                        >
-                    </div>
-    
-                    <div class="confirm-password">
-                        <label for="password"  id="confirm-password">CONFIRM PASSWORD</label>
-                        <input type="password" 
-                        placeholder="Enter your last password" 
-                        required
-                        >
-                    </div>       
-    
+
+                                       
                 </section>
 
-                <button>Create Account</button>
-                <p>Already have an account? <span><a href="#">Log in</a></span></p>
+                <section id="button">
+                    <button>Create Account</button>
+                    <p>Already have an account? <span><a href="#">Log in</a></span></p> 
+
+                </section>
+
+                
 
 
             </form>
@@ -82,6 +108,9 @@
 
         </main>
     </div>
+
+    <script src="javascript.js"></script>
     
+
 </body>
 </html>
